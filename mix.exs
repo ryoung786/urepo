@@ -5,7 +5,7 @@ defmodule Urepo.MixProject do
     [
       app: :urepo,
       version: "0.4.0",
-      elixir: "~> 1.10",
+      elixir: "~> 1.13",
       elixirc_paths: paths(Mix.env()),
       start_permanent: Mix.env() == :prod,
       preferred_cli_env: [
@@ -50,12 +50,12 @@ defmodule Urepo.MixProject do
 
   defp deps do
     [
-      {:plug_cowboy, "~> 2.3"},
-      {:hex_core, "~> 0.6.0"},
+      {:plug_cowboy, "~> 2.5"},
+      {:hex_core, "~> 0.8.4"},
       {:ex_aws_s3, "~> 2.0"},
-      {:sweet_xml, "~> 0.6.6"},
-      {:jason, "~> 1.0"},
-      {:hackney, "~> 1.16"},
+      {:sweet_xml, "~> 0.7.2"},
+      {:jason, "~> 1.3"},
+      {:hackney, "~> 1.18"},
       # Deployment
       {:distillery, "~> 2.1"},
       {:systemd, "~> 0.5"},
